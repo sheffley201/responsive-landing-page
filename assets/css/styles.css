@@ -2,13 +2,131 @@
 /* Apply to all sizes */
 *, *:before, *:after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-family: sans-serif;
   text-align: center;
+  background-color: #eee;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #eee;
+}
+
+header a {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+h2:first-of-type {
+  margin-top: 150px;
+}
+
+input {
+  display: block;
+  margin: auto;
+}
+
+input[type='text'] {
+  width: 300px;
+  padding: 5px;
+}
+
+input[type='submit'] {
+  background-color: #f9c300;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+h2 {
+  margin: 75px 20px 10px 20px;
+}
+
+iframe {
+  margin: 50px auto;
+}
+
+.trombone-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trombone {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.trombone h3 {
+  background-color: #ccc;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.trombone h4 {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+.trombone a {
+  background-color: #f9c300;
+  width: 100px;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 10px 20px;
+  height: 75px;
+}
+
+.footer-nav {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer p {
+  font-weight: lighter;
+  color: #555;
+}
 
 /* Add Breakpoints Here */
 /* Apply to certain size and above */
