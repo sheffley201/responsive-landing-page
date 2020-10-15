@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+  text-align: center;
+}
+
 
 /* Add Breakpoints Here */
 /* Apply to certain size and above */
-
