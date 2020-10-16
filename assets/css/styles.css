@@ -29,8 +29,8 @@ a {
   display: block;
 }
 
-h2:first-of-type {
-  margin-top: 150px;
+header ~ h2 {
+  margin: 150px 0 20px 0;
 }
 
 input {
@@ -53,12 +53,30 @@ input[type='submit'] {
   font-weight: bolder;
 }
 
-h2 {
-  margin: 75px 20px 10px 20px;
+div img {
+  width: 100px;
+  display: none;
+}
+
+.info-section-one, .info-section-two, .info-section-three {
+  max-width: 700px;
+  padding: 0 20px;
+  margin: 75px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-text {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 iframe {
   margin: 50px auto;
+  max-width: 100%;
 }
 
 .trombone-container {
@@ -126,6 +144,55 @@ footer {
 footer p {
   font-weight: lighter;
   color: #555;
+}
+
+@media only screen and (min-width: 550px) {
+  div img {
+    display: block;
+  }
+
+  .info-text {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .info-section-one, .info-section-two, .info-section-three {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header ~ h2 {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header {
+    height: 75px;
+  }
+
+  header ~ h2 {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .trombone-container {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 /* Add Breakpoints Here */
