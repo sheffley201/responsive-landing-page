@@ -68,7 +68,6 @@ div img {
 }
 
 .info-text {
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,6 +153,7 @@ footer p {
   .info-text {
     align-items: flex-start;
     text-align: left;
+    margin-left: 20px;
   }
 
   .info-section-one, .info-section-two, .info-section-three {
